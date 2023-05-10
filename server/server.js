@@ -16,7 +16,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/sensors', verifyToken, sensorRoutes);
 
-mongoose.connect("mongodb://127.0.0.1:27017/PonAgreed", {
+mongoose.connect("mongodb+srv://admin:admin@ponagreed.93ctre2.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
